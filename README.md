@@ -1,80 +1,38 @@
-# Блогикум часть 1
+# Описание.
 
-## Это часть работы над проектом Блогикум:
-
-- Блогикум часть 1 ← _этот репозиторий_
-- [Блогикум часть 2](https://github.com/Sergey-Tsepilov/django_sprint3)
-- [Блогикум часть 3](https://github.com/Sergey-Tsepilov/django_sprint4)
+## Проект django_sprint1.
 
 ## Технологии:
+* Python 3.7
+* Django 3.2
 
-- Python 3.9.13
-- Django 3.2.25
+## Описание проекта
 
-## Установка (Windows):
+Небольшая социальная сеть для публикации личных дневников. Данные для социальной сети располагаются списком в файле views.py.
+![image](https://github.com/RiSSoL-86/django_sprint1/assets/110422516/9ac56170-3969-4bd0-b9ba-543f4a3ad8c1)
 
-1. Клонирование репозитория
 
-```
-git clone https://github.com/Sergey-Tsepilov/django_sprint1.git
-```
+## Как запустить проект:
 
-2. Переход в директорию django_sprint1
+* Клонировать репозиторий и перейти в него в командной строке:
 
-```
-cd django_sprint1
-```
+        git clone git@github.com:RiSSoL-86/django_sprint1.git
+        cd django_sprint1
 
-3. Создание виртуального окружения
+* Cоздать и активировать виртуальное окружение:
 
-```
-python -m venv venv
-```
+        python -m venv venv
+        source venv/Scripts/activate
 
-4. Активация виртуального окружения
+* Установить зависимости из файла requirements.txt:
 
-```
-source venv/Scripts/activate
-```
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
-5. Обновите pip
+* Запустить проект:
 
-```
-python -m pip install --upgrade pip
-```
+        python manage.py runserver
 
-6. Установка зависимостей
+* Перейти на локальный сервер:
 
-```
-pip install -r requirements.txt
-```
-
-7. Переход в директорию blogicum
-
-```
-cd blogicum
-```
-
-8. Применение миграций
-
-```
-python manage.py migrate
-```
-
-9. Запуск проекта, введите команду
-
-```
-python manage.py runserver
-```
-
-10. Отмена
-
-```
-Ctrl + C
-```
-
-11. Деактивация виртуального окружения
-
-```
-deactivate
-```
+        http://127.0.0.1:8000/
